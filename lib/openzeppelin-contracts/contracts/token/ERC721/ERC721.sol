@@ -236,7 +236,7 @@ abstract contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Er
      *
      * Emits a {Transfer} event.
      *
-     * NOTE: If overriding this function in a way that tracks balances, see also {_increaseBalance}.
+     * NOTE: If overriding this function in a way that tracks balances, see also {_safeMint}.
      */
     function _update(address to, uint256 tokenId, address auth) internal virtual returns (address) {
         address from = _ownerOf(tokenId);
